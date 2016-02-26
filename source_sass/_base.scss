@@ -1,1 +1,16 @@
 // Add any custom Sass & CSS here
+
+.sticky {
+	width: 100%;
+}
+
+.bigTrump {
+	background-image: url("../media/trump_yell.jpg");
+	// background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 500px;
+	width: 100%;
+	margin: 0px;
+}
+

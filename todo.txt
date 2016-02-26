@@ -1,0 +1,20 @@
+footer
+Position Indicator
+	Smooth Scrolling
+Navbar Resizing
+Carousel
+Multicolumn section
+All horizontally centered
+1 vertically centered
+Fixed background image
+Modal
+Video (Can embed this time)
+Animate something
+Font Awesome Icon?
+Social Media Icons
+RESPONSIVE
+Style and colors
+
+Done:
+sticky navbar
+header
