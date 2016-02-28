@@ -14,3 +14,32 @@
 	margin: 0px;
 }
 
+.top-bar {
+	font-size: 20pt;
+	
+	#main-menu {
+		.menu-text {
+			@include breakpoint(small) {
+				// float: left;
+				padding: .05rem;
+				font-size: 65%;
+			}
+			@include breakpoint(medium) {
+				font-size: 100%;
+				padding: .25rem;
+			}
+			@include breakpoint(large) {
+				padding: $menu-item-padding;
+			}
+		}
+		@include breakpoint(medium only) {
+			padding: .5rem;
+			float: left;
+		}
+	}
+	.top-bar-right {
+		@include breakpoint(medium only) { //For rotated phones
+			float: left;
+		}
+	}
+}
