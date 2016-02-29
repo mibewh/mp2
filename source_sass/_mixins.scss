@@ -1,1 +1,50 @@
 // Insert your mixins
+
+@mixin scaleBackground($bg) {
+	background-image: url($bg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin fadeIn($time) {
+	@-webkit-keyframes fade { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fade { from { opacity:0; } to { opacity:1; } }
+	@keyframes fade { from { opacity:0; } to { opacity:1; } }
+
+    opacity:0;
+    //Animation set
+	-webkit-animation: fade ease-in 1;
+	-moz-animation: fade ease-in 1;
+	animation: fade ease-in 1;
+	//Set duration
+	-webkit-animation-duration: $time;
+	-moz-animation-duration: $time;
+	animation-duration: $time;
+	//Ensure animation runs
+	-webkit-animation-fill-mode: forwards; 
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@mixin centerOuter {
+	width: 100%;
+	display: table;
+}
+
+@mixin centerInner {
+	display: table-cell;
+	vertical-align: middle; 
+}
+
+@mixin triImage($path) {
+	height: 50vh;
+	@include breakpoint(medium only) {
+		height: 50vw;
+	}
+	width: auto;
+
+	@include scaleBackground($path);
+	padding: 20px;
+	margin-bottom: 20px;
+}

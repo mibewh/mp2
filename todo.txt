@@ -1,23 +1,29 @@
-footer
-Position Indicator
-	Smooth Scrolling
 Navbar Resizing
-Carousel
-Multicolumn section
-All horizontally centered
-1 vertically centered
-Fixed background image
-Modal
-Video (Can embed this time)
-Animate something
-Font Awesome Icon?
-Social Media Icons
-RESPONSIVE
+	Grow padding-top
 Style and colors
 
 Done:
-sticky navbar
-header
+	sticky navbar
+	header
+	Fixed background image
+	Modal
+	1 vertically centered
+	Multicolumn section
+	All horizontally centered
+	Video (Can embed this time)
+	footer
+	Carousel
+	Animate something
+	Font Awesome Icon?
+	RESPONSIVE
+	Social Media Icons
+	Position Indicator
+		Smooth Scrolling
 
-Responsive changes:
+Responsive changes (3 areas, write up, rationale):
 	Stacking navbar
+	3 column section go vertical on smaller viewports
+	Learn more button for info text on smaller viewports (?)
+	Change size of intro image based on viewport
+
+Redesign (3 areas, write up, rationale)

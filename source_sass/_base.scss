@@ -1,22 +1,26 @@
 // Add any custom Sass & CSS here
 
+body {
+	overflow-x: hidden;
+}
+
 .sticky {
 	width: 100%;
 }
 
-.bigTrump {
-	background-image: url("../media/trump_yell.jpg");
-	// background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
-	height: 500px;
+header {
+	z-index: 3;
 	width: 100%;
-	margin: 0px;
+	position: fixed;
 }
 
 .top-bar {
 	font-size: 20pt;
-	
+	padding: 0px;
+	// background-color: rgba(255,0,0,.5);
+	.menu {
+		background-color: rgba(0,0,0,0);
+	}
 	#main-menu {
 		.menu-text {
 			@include breakpoint(small) {
@@ -42,4 +46,94 @@
 			float: left;
 		}
 	}
+}
+
+.active {
+	background-color: red;
+}
+
+#home {
+	@include fadeIn(2s);
+	// padding: 50px;
+	@include centerOuter;
+	@include scaleBackground("../media/doge-bg.jpg");
+	background-attachment: fixed;
+	background-position: center 80px;
+	background-origin: content-box;
+	@include breakpoint(small) {
+		padding-top: 20vh;
+		padding-bottom: 20vh;
+	}
+	@include breakpoint(large) {
+		padding-top: 325px;
+		padding-bottom: 325px;
+	}
+
+	#description {
+		@include centerInner;
+		text-align: center;
+		h2 {
+			color: red;
+		}
+		h1 {
+			color: cyan;
+		}
+	}
+}
+#aboutModal {
+	overflow-y: auto;
+	h2 {
+		text-align: right;
+	}
+}
+
+section {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#process {
+	// @include breakpoint(large) {
+	// 	margin-left: 20px;
+	// 	margin-left: 20px;
+	// 	width: auto;
+	// }
+	// img {
+	// 	max-width: 100%;
+	// 	height: auto;
+	// }
+	// .columns {
+	// 	width: 25%;
+	// }
+	#image1 {
+		@include triImage("../media/many-doge.png");
+	}
+	#image2 {
+		@include triImage("../media/laugh-doge.jpg");
+	}
+	#image3 {
+		@include triImage("../media/computer-doge.png");
+	}
+}
+
+.carousel {
+	img {
+		height: 80vw;
+		@include breakpoint(medium) {
+			height: 50vw;
+		}
+		// @include breakpoint(large) {
+		// 	height: 70vw;
+		// }
+		max-width: auto;
+	}
+}
+
+footer {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
