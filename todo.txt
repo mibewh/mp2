@@ -1,6 +1,3 @@
-Navbar Resizing
-	Grow padding-top
-Style and colors
 
 Done:
 	sticky navbar
@@ -19,6 +16,9 @@ Done:
 	Social Media Icons
 	Position Indicator
 		Smooth Scrolling
+	Navbar Resizing
+		Grow padding-top
+	Style and colors
 
 Responsive changes (3 areas, write up, rationale):
 	Stacking navbar

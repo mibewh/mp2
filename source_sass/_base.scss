@@ -2,6 +2,7 @@
 
 body {
 	overflow-x: hidden;
+	background-color: $bg-color-main;;
 }
 
 .sticky {
@@ -15,6 +16,7 @@ header {
 }
 
 .top-bar {
+	background-color: $bar-color;
 	font-size: 20pt;
 	padding: 0px;
 	// background-color: rgba(255,0,0,.5);
@@ -41,15 +43,47 @@ header {
 			float: left;
 		}
 	}
+	h3 {
+		color: darkorange;
+		font-weight: bold;
+	}
 	.top-bar-right {
 		@include breakpoint(medium only) { //For rotated phones
 			float: left;
+		}
+		a {
+			&#homeNav {
+				color: yellow;
+			}
+			&#actionNav {
+				color: red;
+			}
+			&#processNav {
+				color: purple;
+			}
+			&#crewNav {
+				color: green;
+			}
 		}
 	}
 }
 
 .active {
-	background-color: red;
+	background-color: #58A7C7;
+}
+
+section {
+	text-align: center;
+	// padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.stripe {
+	background-color: $stripe-color;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 #home {
@@ -87,36 +121,38 @@ header {
 	}
 }
 
-section {
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	padding-left: 0;
-	padding-right: 0;
-}
 
+#video {
+	h1 {
+		color: indigo;
+	}
+}
 #process {
-	// @include breakpoint(large) {
-	// 	margin-left: 20px;
-	// 	margin-left: 20px;
-	// 	width: auto;
-	// }
-	// img {
-	// 	max-width: 100%;
-	// 	height: auto;
-	// }
-	// .columns {
-	// 	width: 25%;
-	// }
+	h1 {
+		color: firebrick;
+	}
 	#image1 {
 		@include triImage("../media/many-doge.png");
+	}
+	#desc1 {
+		color: blue;
 	}
 	#image2 {
 		@include triImage("../media/laugh-doge.jpg");
 	}
+	#desc2 {
+		color: deeppink;
+	}
 	#image3 {
 		@include triImage("../media/computer-doge.png");
 	}
+	#desc3 {
+		color: cyan;
+	}
+}
+
+#crew {
+	color: tomato;
 }
 
 .carousel {
@@ -136,4 +172,6 @@ footer {
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	background-color: $bar-color;
+	color: maroon;
 }

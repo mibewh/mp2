@@ -1,0 +1,10 @@
+Responsive Changes
+	1. In medium and below viewports, the navigation options disappear, and a hamburger button appears which when pressed reveals the options below the navbar. This gives the nav options enough space to be readable while still giving the user most of the screen space.
+	2. In medium and below viewports, the images in the 3 column section
+	stack, giving 3 sections of alternating image and text. This prevents the images from appearing cramped on the screen in these smaller settings and serves the touch interface better.
+	3. On smaller viewports, all of the image assets on the screen change their size to best accomodate the medium. Since the images are sent mostly as backgrounds, this only affects the part of the image displayed, which in all instances is made to show the key part of the image.
+Redesign Changes
+	1. The images in the 3 column area are now slightly separated, allowing the user to better differentiate between them and separate them thematically.
+	2. The text in the 3 column section is no longer on top of the images. This was fairly hard to read, so having the text below is much better on the eyes.
+	3. There are now stripes on the headers to the main sections. This helps with thematic separation and makes the logical sections to the page visible.
+	4. There are a number of color differences, including background and nav bar changes aimed at making the site easier to look at. Also, most of the text now has a different rainbow color. Both of these changes contribute to making the site better match the "doge" theme.
